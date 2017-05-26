@@ -29,4 +29,4 @@ openssl req -new -sha256 -nodes -out localhost.csr -newkey rsa:2048 -keyout loca
 openssl x509 -req -in localhost.csr -CA root-cert/rootCA.pem -CAkey root-cert/rootCA.key -CAcreateserial -out localhost.crt -days 500 -sha256 -extfile v3.ext;
 
 echo ""
-echo "BE SURE TO ADD THE .CRT TO KEYCHAIN AND SET IT AS TRUSTED"
+echo "BE SURE TO ADD THE .CRT TO OSX KEYCHAIN AND SET IT AS TRUSTED"
